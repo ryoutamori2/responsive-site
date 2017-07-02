@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #281709;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fcf2d5; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Font
+------------------------------------------------------------*/
+.abel, h2, #tokusyoku h3, #button-box h3, #button-box .button {
+  font-family: "Hiragino Kaku Gothic Std", sans-serif; }
+
+/* Header
+------------------------------------------------------------*/
+#header {
+  background: url("../images/top_cover.jpg") no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: 20% 20%; }
+
+/* Main
+------------------------------------------------------------*/
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%;
+    margin: 0 auto; }
+
+h2 {
+  font-weight: bold; }
+
+#tokusyoku .container {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+#tokusyoku h2 {
+  color: #281709;
+  font-size: 3.6rem;
+  margin-bottom: 30px; }
+#tokusyoku .tokusyoku-box {
+  background: #ec9b27;
+  margin: 10px 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+#tokusyoku h3 {
+  color: #ec9b27;
+  background: #281709;
+  padding: 10px 0;
+  font-size: 2.6rem;
+  font-weight: bold; }
+
+/* Footer
+------------------------------------------------------------*/
+#footer {
+  background-color: #281709;
+  padding: 50px 0; }
+
+#button-box {
+  text-align: center; }
+  #button-box h3 {
+    color: #ec9b27;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding-bottom: 10px; }
+  #button-box .button {
+    font-size: 2.6rem;
+    position: relative;
+    background-color: #ec9b27;
+    border-radius: 4px;
+    color: #281709;
+    line-height: 52px;
+    -moz-transition: none;
+    -webkit-transition: none;
+    transition: none;
+    box-shadow: 0 5px 0 #a96f1d;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+  #button-box .button:active {
+    top: 5px;
+    box-shadow: none; }
+  #button-box a {
+    width: 50%;
+    padding: 2px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none; }
+
+/* PC
+------------------------------------------------------------*/
+@media (min-width: 769px) {
+  #tokusyoku .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #tokusyoku .tokusyoku-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 0 10px; }
+  #tokusyoku p {
+    padding: 20px; }
+
+  #button-box .button:hover {
+    background: #ecb228; }
+  #button-box a {
+    width: 20%;
+    padding: 0; } }
+
+/*# sourceMappingURL=style.css.map */
